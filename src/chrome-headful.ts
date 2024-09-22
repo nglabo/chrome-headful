@@ -6,7 +6,7 @@ export const handler = async () => {
   const chrome = await launch({
     chromeFlags: [
       "--window-size=1366,768",
-    ] /** We don't need to use --headless flag :) */,
+    ] /** We don't need to use the --headless flag :) */,
     ignoreDefaultFlags: true,
     port: 9222,
     userDataDir: tmp.dirSync().name,
